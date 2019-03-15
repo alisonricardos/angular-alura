@@ -4,11 +4,11 @@
     "\\angular-alura",
     "\\angular-alura\\config",
     "\\angular-alura\\public",
-    "\\angular-alura\\public\\css",
     "\\angular-alura\\public\\js",
     "\\angular-alura\\public\\js\\controllers",
-    "\\angular-alura\\public\\js\\directives"
+    "\\angular-alura\\public\\js\\directives",
+    "\\angular-alura\\public\\partials"
   ],
-  "SelectedNode": "\\angular-alura\\.gitignore",
+  "SelectedNode": "\\angular-alura\\public\\js\\controllers\\fotos-controller.js",
   "PreviewInSolutionExplorer": false
 }
