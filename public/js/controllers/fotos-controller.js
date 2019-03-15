@@ -20,10 +20,11 @@ angular.module('alurapic').controller('FotosController', function ($scope, $http
 
     $http.get('v1/fotos')
         .success(function (retorno) {
-            console.log(retorno);
+       
             $scope.fotos = retorno;
         })
         .error(function (erro) {
+            console.log("fudeu!");
             console.log(erro);
         });
     ////////////////Esse método faz a mesma coisa do acima
