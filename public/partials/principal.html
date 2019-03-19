@@ -1,6 +1,10 @@
 ﻿<div class="jumbotron">
     <h1 class="text-center">Alurapic</h1>
 </div>
+<p ng-show="mensagem.length" class="alert alert-info">
+    {{mensagem}}
+</p>
+
 <div class="row">
     <div class="col-md-12">
         <form>
@@ -16,10 +20,15 @@
 
     </div>
 </div>
+
 <div class="row">
+
     <meu-painel class="col-md-2 painel-animado.ng-leave-active painel-animado" ng-repeat="foto in fotos | filter:filtro" titulo="{{foto.titulo}}">
         <!-- ng-repeat="foto in fotos | filter:filtro" essa declaração faz filtrar dentro ng repeat-->
-        <div class="panel-body">
-            <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"></minha-foto>
-        </div>
+
+        <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"></minha-foto>
+
+        <a href="/fotos/edit/{{foto._id}}" class="btn btn-primary btn-block">EDITAR</a> <!--uso do link porque vai direcionar para outra pagina-->
+        <button class="btn btn-danger btn-block" ng-click="remover(foto)">REMOVER</button><!--uso do botão porque vai continuar na pagina-->
+    </meu-painel>
 </div><!--Fim do painel-->
