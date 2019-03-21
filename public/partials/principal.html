@@ -29,6 +29,7 @@
         <minha-foto url="{{foto.url}}" titulo="{{foto.titulo}}"></minha-foto>
 
         <a href="/fotos/edit/{{foto._id}}" class="btn btn-primary btn-block">EDITAR</a> <!--uso do link porque vai direcionar para outra pagina-->
-        <button class="btn btn-danger btn-block" ng-click="remover(foto)">REMOVER</button><!--uso do botão porque vai continuar na pagina-->
+        <meu-botao-perigo nome="Remover" acao="remover(foto)"></meu-botao-perigo><!--uso do botão porque vai continuar na pagina-->
     </meu-painel>
+   
 </div><!--Fim do painel-->
